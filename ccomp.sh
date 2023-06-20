@@ -16,9 +16,9 @@ echo "using namespace std;" >> main.cpp
 echo "" >> main.cpp
 echo "int main(int argc, char** argv)" >> main.cpp
 echo "{" >> main.cpp
-echo "   cout << \"Hello World!\" << endl;" >> main.cpp
+echo "    cout << \"Hello World!\" << endl;" >> main.cpp
 echo "" >> main.cpp
-echo "   return 0;" >> main.cpp
+echo "    return 0;" >> main.cpp
 echo "}" >> main.cpp
 
 

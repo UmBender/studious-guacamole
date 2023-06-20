@@ -17,9 +17,9 @@ echo "" >> main.c
 echo "" >> main.c
 echo "int main(int argc, char** argv)" >> main.c
 echo "{" >> main.c
-echo "   printf(\"Hello World!\n\");" >> main.c
+echo "    printf(\"Hello World!\n\");" >> main.c
 echo "" >> main.c
-echo "   return 0;" >> main.c
+echo "    return 0;" >> main.c
 echo "}" >> main.c
 
 
