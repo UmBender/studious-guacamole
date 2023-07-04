@@ -7,7 +7,7 @@ chmod +x build.sh
 
 echo "#!/bin/bash" >> ./build.sh
 echo "" >> ./build.sh
-echo "gcc main.c -o main -lm -lncurses -Wall -O3" >> ./build.sh
+echo "gcc main.c -g -o main -lm -lncurses -Wall -O3" >> ./build.sh
 echo "./main" >> ./build.sh
 
 echo "#include <stdio.h>" >> main.c

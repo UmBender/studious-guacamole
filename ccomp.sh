@@ -7,7 +7,7 @@ chmod +x build.sh
 
 echo "#!/bin/bash" >> ./build.sh
 echo "" >> ./build.sh
-echo "clang++ main.cpp -o main -Wall -O3" >> ./build.sh
+echo "clang++ -g main.cpp -o main -Wall -O3" >> ./build.sh
 echo "./main" >> ./build.sh
 
 echo "#include <bits/stdc++.h>" >> main.cpp
