@@ -3,7 +3,7 @@
 touch ./build.sh
 touch ./main.cpp
 chmod +x build.sh
-#git init
+git init
 
 echo "#!/bin/bash" >> ./build.sh
 echo "" >> ./build.sh
