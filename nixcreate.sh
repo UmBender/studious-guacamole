@@ -1,4 +1,3 @@
-#!/bin/bash
 
 echo "# shell.nix" >> ./shell.nix
 echo "{ pkgs ? import <nixpkgs> {} }:" >> ./shell.nix
