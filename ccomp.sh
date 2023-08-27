@@ -15,7 +15,6 @@ echo "" >> main.cpp
 echo "using namespace std;" >> main.cpp
 echo "" >> main.cpp
 echo "using ll = long long;" >> main.cpp
-echo "#define int ll" >> main.cpp
 echo "" >> main.cpp
 echo "int main(int argc, char** argv)" >> main.cpp
 echo "{" >> main.cpp
