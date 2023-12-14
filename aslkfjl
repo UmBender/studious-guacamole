@@ -1,0 +1,37 @@
+[38;5;246;03m; If you already have a function that you would like to apply to every[39;00m
+[38;5;246;03m; item in a single sequence, you can use [`run!`][run!] instead of[39;00m
+[38;5;246;03m; [`doseq`][doseq] for greater concision:[39;00m
+
+[38;5;252m [39m[38;5;252m([39m[38;5;68mrun![39m[38;5;252m [39m[38;5;31mprintln [39m[38;5;252m[[39m[38;5;67m1[39m[38;5;252m [39m[38;5;67m2[39m[38;5;252m [39m[38;5;67m3[39m[38;5;252m [39m[38;5;67m4[39m[38;5;252m [39m[38;5;67m5[39m[38;5;252m][39m[38;5;252m)[39m
+[38;5;252m [39m[38;5;246;03m;; 1[39;00m
+[38;5;252m [39m[38;5;246;03m;; 2[39;00m
+[38;5;252m [39m[38;5;246;03m;; 3[39;00m
+[38;5;252m [39m[38;5;246;03m;; 4[39;00m
+[38;5;252m [39m[38;5;246;03m;; 5[39;00m
+[38;5;252m [39m[38;5;246;03m;;=> nil[39;00m
+
+[38;5;246;03m; `doseq` is useful when the action you want to perform is more[39;00m
+[38;5;246;03m; complicated than just applying a single function to items in a single[39;00m
+[38;5;246;03m; sequence, but here `run!` works just fine.[39;00m
+[38;5;246;03m; [39;00m
+[38;5;246;03m; [doseq]: http://clojuredocs.org/clojure.core/doseq[39;00m
+[38;5;246;03m; [run!]: http://clojuredocs.org/clojure.core/run![39;00m
+[38;5;246;03m; [39;00m
+[38;5;246;03m; [Sam Estep] [so/q/38035839] [cc by-sa 3.0][39;00m
+[38;5;246;03m; 404 NOT FOUND[39;00m
+[38;5;246;03m; [39;00m
+[38;5;246;03m; Unknown cheat sheet. Please try to reformulate your query.[39;00m
+[38;5;246;03m; Query format:[39;00m
+
+[38;5;252m [39m[38;5;87m/LANG/QUESTION[39m
+
+[38;5;246;03m; Examples:[39;00m
+
+[38;5;252m [39m[38;5;87m/python/read+json[39m
+[38;5;252m [39m[38;5;87m/golang/run+external+program[39m
+[38;5;252m [39m[38;5;87m/js/regex+search[39m
+
+[38;5;246;03m; See /:help for more info.[39;00m
+[38;5;246;03m; [39;00m
+[38;5;246;03m; If the problem persists, file a GitHub issue at[39;00m
+[38;5;246;03m; github.com/chubin/cheat.sh or ping @igor_chubin[39;00m
