@@ -7,7 +7,7 @@ git init
 
 #echo "#!/bin/bash" >> ./build.sh
 echo "" >> ./build.sh
-echo "gcc -save-temps main.c -o main -lm -Wall -g -Og -Werror" >> ./build.sh
+echo "gcc -save-temps main.c -o main -lm -lraylib -lGL -lpthread -ldl -lrt -lX11 -Wall -g -Og -Werror" >> ./build.sh
 echo "./main" >> ./build.sh
 
 echo "#include <stdio.h>" >> main.c
