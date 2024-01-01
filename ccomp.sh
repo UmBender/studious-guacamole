@@ -2,6 +2,8 @@
 
 touch ./build.sh
 touch ./main.cpp
+touch ./gitignore
+touch ./README.md
 chmod +x build.sh
 
 echo "" >> ./build.sh
@@ -22,5 +24,20 @@ echo "  cout << \"Hello World!\" << endl;" >> main.cpp
 echo "" >> main.cpp
 echo "  return 0;" >> main.cpp
 echo "}" >> main.cpp
+
+git init
+
+echo "/.ccls-cache" >> .gitignore
+echo "/main" >> .gitignore
+
+echo "# " >> README.md
+echo "<br> " >> README.md
+echo "refs: \"\" " >> README.md
+echo "" >> README.md
+echo "" >> README.md
+echo "<br> " >> README.md
+echo "## Solução " >> README.md
+
+
 
 
