@@ -2,7 +2,6 @@
 
 touch ./build.sh
 touch ./main.cpp
-touch ./gitignore
 touch ./README.md
 chmod +x build.sh
 
