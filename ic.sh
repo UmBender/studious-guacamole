@@ -1,4 +1,4 @@
 
-cd /home/bender/relatorio/minha_ic/IC-DinamicosDiscretos/relatorio
+cd /home/bender/relatorio/IC-DinamicosDiscretos/relatorio
 nvim relatorio.tex
 
