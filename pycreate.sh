@@ -1,14 +1,8 @@
 touch build.sh main.py 
+git init
 
-echo "def main():" >> main.py
-echo "    print(\"Hello World\")" >> main.py
-echo "" >> main.py
-echo "" >> main.py
-echo "if __name__ == \"__main__\":" >> main.py
-echo "    main()" >> main.py
-echo "" >> main.py
-
-
+DATA=$(cat ~/scripts/template/main.py)
+echo "$DATA" >> main.py
 
 echo "python3 main.py" >> build.sh
 
