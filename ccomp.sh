@@ -11,7 +11,7 @@ echo "./main" >> ./build.sh
 DATA=$(cat ~/scripts/template/ccomp.cpp)
 echo "$DATA" >> main.cpp
 
-git init
+#git init
 
 echo "/.ccls-cache" >> .gitignore
 echo "/main" >> .gitignore
