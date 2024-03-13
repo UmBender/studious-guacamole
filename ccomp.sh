@@ -2,11 +2,14 @@
 
 touch ./build.sh
 touch ./main.cpp
-touch ./README.md
+touch ./README.md ./Makefile
 chmod +x build.sh
 
-echo "clang++  main.cpp -o main -lm -Wall -g -Og -Werror" >> ./build.sh
+echo "make" >> ./build.sh
 echo "./main" >> ./build.sh
+
+DATA=$(cat ~/scripts/template/Makefilecomp)
+echo "$DATA" >> Makefile
 
 DATA=$(cat ~/scripts/template/ccomp.cpp)
 echo "$DATA" >> main.cpp
