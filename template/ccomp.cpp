@@ -4,6 +4,7 @@ using namespace std;
 
 using ll = long long;
 #define int ll
+#define endl '\n'
 
 int32_t main() {
   ios_base::sync_with_stdio(false);

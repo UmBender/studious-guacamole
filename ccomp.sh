@@ -18,6 +18,7 @@ echo "$DATA" >> main.cpp
 
 echo "/.ccls-cache" >> .gitignore
 echo "/main" >> .gitignore
+echo "/main.o" >> .gitignore
 
 NEW_DATA=$(cat ~/scripts/template/comp.md)
 echo "$NEW_DATA" >> README.md
