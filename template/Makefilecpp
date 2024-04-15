@@ -1,6 +1,6 @@
 CC = g++
-CFLAGS_DEV = -std=c++11 -Wall -Werror -g
-CFLAGS_RELEASE = -std=c++11 -O3 
+CFLAGS_DEV = -std=c++17 -Wall -Werror -g
+CFLAGS_RELEASE = -std=c++17 -O2 -pedantic -pedantic-erros -Wall -Werror
 
 # Target executable
 TARGET_DEV = main-dev

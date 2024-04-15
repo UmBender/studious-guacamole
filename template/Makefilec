@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS_DEV = -lm -lraylib -lGL -lpthread -ldl -lrt -lX11 -Wall -g -Og -Werror
-CFLAGS_RELEASE =  -O3 -lm -lraylib -lGL -lpthread -ldl -lrt -lX11
+CFLAGS_DEV = -lm -lraylib -lGL -lpthread -ldl -lrt -lX11 -Wall -g -Og -Werror -pedantic
+CFLAGS_RELEASE =  -O3 -lm -lraylib -lGL -lpthread -ldl -lrt -lX11 -pedantic -pedantic-errors
 
 # Target executable
 TARGET_DEV = main-dev
