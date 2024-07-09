@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -std=c++17 -lm -Wall -g -Og -Werror
+CFLAGS = -std=c++17 -lm -g -Og
 
 # Target executable
 TARGET = main 
