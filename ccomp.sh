@@ -5,8 +5,8 @@ touch ./main.cpp
 touch ./README.md ./Makefile
 chmod +x build.sh
 
-echo "make" >> ./build.sh
-echo "./main" >> ./build.sh
+echo "make dev" >> ./build.sh
+echo "./m" >> ./build.sh
 
 DATA=$(cat ~/scripts/template/Makefilecomp)
 echo "$DATA" >> Makefile

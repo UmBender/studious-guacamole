@@ -6,6 +6,11 @@ using ll = long long;
 #define int ll
 #define endl (char)10
 
+
+
+int max(int a, int b) { return a > b ? a : b; }
+int min(int a, int b) { return a > b ? b : a; }
+
 int bs(vector<int> &arr, int target) {
   int left = 0;
   int right = arr.size() - 1;
