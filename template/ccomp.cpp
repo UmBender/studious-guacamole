@@ -51,16 +51,16 @@ struct Sieve {
 int max(int a, int b) { return a > b ? a : b; }
 int min(int a, int b) { return a > b ? b : a; }
 
-int bs(vector<int> &arr, int target) {
+int bs(function<int(int)> f, int target, int upper_bound) {
   int left = 0;
-  int right = arr.size() - 1;
+  int right = upper_bound - 1;
   while (left <= right) {
     int middle = left + (right - left) / 2;
-    if (arr[middle] == target) {
+    if (f(middle) == target) {
       return middle;
     }
 
-    if (arr[middle] > target) {
+    if (f(middle) > target) {
       right = middle - 1;
     } else {
       left = middle + 1;
