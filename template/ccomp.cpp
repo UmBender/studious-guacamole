@@ -4,7 +4,9 @@ using namespace std;
 
 using ll = long long;
 #define int ll
-#define endl (char)10
+#define endl '\n'
+
+#define MAX_INT ((int)1E18 + 1000)
 
 void __dbg() { cerr << endl; }
 template <typename T> void __dbg(T t) { cerr << t << endl; }

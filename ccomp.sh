@@ -11,8 +11,7 @@ echo "./m" >> ./build.sh
 DATA=$(cat ~/scripts/template/Makefilecomp)
 echo "$DATA" >> Makefile
 
-DATA=$(cat ~/scripts/template/ccomp.cpp)
-echo "$DATA" >> main.cpp
+cp ~/scripts/template/ccomp.cpp main.cpp
 
 #git init
 
