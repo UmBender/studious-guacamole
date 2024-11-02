@@ -6,7 +6,7 @@ touch ./README.md ./Makefile
 chmod +x build.sh
 
 echo "make dev" >> ./build.sh
-echo "./m" >> ./build.sh
+echo "./m < input.txt" >> ./build.sh
 
 DATA=$(cat ~/scripts/template/Makefilecomp)
 echo "$DATA" >> Makefile
@@ -21,4 +21,5 @@ echo "/main.o" >> .gitignore
 
 NEW_DATA=$(cat ~/scripts/template/comp.md)
 echo "$NEW_DATA" >> README.md
+touch input.txt
 
