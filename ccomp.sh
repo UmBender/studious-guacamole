@@ -12,7 +12,7 @@ echo "./m < input.txt" >> ./build.sh
 DATA=$(cat ~/scripts/template/Makefilecomp)
 echo "$DATA" >> Makefile
 
-cp ~/scripts/template/ccomp.cpp main.cc
+cp ~/scripts/template/ccomp.cpp main.cpp
 cp -r ~/scripts/template/atcoder ./
 cp ~/scripts/template/expander.py ./
 
