@@ -24,7 +24,7 @@ echo "expander.py" >> .gitignore
 echo "/main" >> .gitignore
 echo "/main.o" >> .gitignore
 echo "-I." >> compile_flags.txt
-echo "-std=c++17" >> compile_flags.txt
+echo "-std=c++20" >> compile_flags.txt
 echo "-Og" >> compile_flags.txt 
 echo "-g" >> compile_flags.txt 
 echo "-pedantic" >> compile_flags.txt
