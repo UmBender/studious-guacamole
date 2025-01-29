@@ -14,5 +14,8 @@ echo "/.ccls-cache" >> .gitignore
 echo "/main" >> .gitignore
 echo "/*.o" >> .gitignore
 
-
-
+echo "-std=c++20" >> compile_flags.txt
+echo "-Og" >> compile_flags.txt 
+echo "-g" >> compile_flags.txt 
+echo "-pedantic" >> compile_flags.txt
+echo "-Wall" >> compile_flags.txt 
