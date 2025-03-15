@@ -15,6 +15,7 @@ echo "$DATA" >> Makefile
 cp ~/scripts/template/ccomp.cpp main.cpp
 cp -r ~/scripts/template/atcoder ./
 cp ~/scripts/template/expander.py ./
+cp ~/scripts/template/.clang-format-comp ./.clang-format
 
 #git init
 
