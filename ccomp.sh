@@ -30,6 +30,7 @@ echo "-Og" >> compile_flags.txt
 echo "-g" >> compile_flags.txt 
 echo "-pedantic" >> compile_flags.txt
 echo "-Wall" >> compile_flags.txt 
+echo "-Wno-vla" >> compile_flags.txt
 
 NEW_DATA=$(cat ~/scripts/template/comp.md)
 echo "$NEW_DATA" >> README.md
