@@ -13,6 +13,7 @@ echo "$DATA" >> main.c
 
 DATA=$(cat ~/scripts/template/Makefilec)
 echo "$DATA" >> Makefile
+cp ~/scripts/template/.clang-format-c ./.clang-format
 
 echo "/main" >> .gitignore
 echo "/*.o" >> .gitignore
