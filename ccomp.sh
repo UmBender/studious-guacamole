@@ -1,11 +1,10 @@
 #!/bin/zsh
 
 touch ./build.sh
-touch ./main.cpp
 touch ./README.md ./Makefile
 chmod +x build.sh
 
-~/scripts/template/build_ccomp.sh > ./build.sh
+cat ~/scripts/template/build_ccomp.sh > ./build.sh
 
 DATA=$(cat ~/scripts/template/Makefilecomp)
 echo "$DATA" >> Makefile
