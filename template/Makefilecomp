@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -std=c++20 -lm -I.
-CFLAGS_DEBUG = -std=c++20 -Og -g -pedantic -Wall -Werror -I.
+CFLAGS_DEBUG = -std=c++20 -Og -g3 -Wall -I. -fsanitize=address -fsanitize=leak -fsanitize=undefined
 
 # Default target
 help:
