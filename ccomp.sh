@@ -5,14 +5,13 @@ touch ./main.cpp
 touch ./README.md ./Makefile
 chmod +x build.sh
 
-echo "#python3 expander.py main.cpp" >> ./build.sh
-echo "make dev" >> ./build.sh
-echo "./m < input.txt" >> ./build.sh
+~/scripts/template/build_ccomp.sh > ./build.sh
 
 DATA=$(cat ~/scripts/template/Makefilecomp)
 echo "$DATA" >> Makefile
 
-cp ~/scripts/template/ccomp.cpp main.cpp
+cp ~/scripts/template/ccomp.cpp base.cpp
+cp ~/scripts/template/ccomp.cpp a.cpp
 cp -r ~/scripts/template/atcoder ./
 cp ~/scripts/template/expander.py ./
 cp ~/scripts/template/.clang-format-comp ./.clang-format
