@@ -17,21 +17,20 @@ template <typename T, typename... TRest> void __dbg(T first, TRest... rest) {
 #define MAX_INT ((int64_t)1E18 + 1000)
 #define makefn(fn) [](auto... args) { return fn(args...); }
 using ll = long long;
+using ld = long double;
 #define int ll
 //using mint = atcoder::modint;
 // clang-format on
 
-void solution() {
-}
+void solution() {}
 
 int32_t main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr), cout.tie(nullptr);
-    // atcoder::modint::set_mod(998244353);
-    int t;
-    cin >> t;
-    while (t--)
-        solution();
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr), cout.tie(nullptr);
+	// atcoder::modint::set_mod(998244353);
+	int t;
+	cin >> t;
+	while (t--) solution();
 
-    return 0;
+	return 0;
 }
