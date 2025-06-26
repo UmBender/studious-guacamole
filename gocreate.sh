@@ -14,6 +14,5 @@ echo "$DATA" >> main.go
 # echo "}" >> main.go
 # echo "" >> main.go
 #
-go mod init main
 echo "go run main.go" >> build.sh
 chmod +x build.sh
