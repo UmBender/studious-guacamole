@@ -11,11 +11,11 @@ help:
 
 # Pattern rule for normal compilation
 %: %.cpp
-	$(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $< -o target/$@
 
 # Pattern rule for debug compilation
 %-debug: %.cpp
-	$(CC) $(CFLAGS_DEBUG) $< -o $@
+	$(CC) $(CFLAGS_DEBUG) $< -o target/$@
 
 # Handle debug target with arguments
 ifneq (,$(filter debug,$(MAKECMDGOALS)))
@@ -34,6 +34,8 @@ endif
 clean:
 	rm -f *-debug
 	rm -f *-combined*
+	rm -rf target
+	rm stats 
 	find . -maxdepth 1 -type f -executable ! -name 'atcoder*' ! -name 'build.sh' ! -name 'expander.py' -exec rm -f {} +
 
 .PHONY: help clean debug

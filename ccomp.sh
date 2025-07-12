@@ -17,11 +17,12 @@ cp ~/scripts/template/.clang-format-comp ./.clang-format
 
 #git init
 
-echo "/.ccls-cache" >> .gitignore
-echo "atcoder" >> .gitignore
+echo "atcoder/*" >> .gitignore
 echo "expander.py" >> .gitignore
-echo "/main" >> .gitignore
-echo "/main.o" >> .gitignore
+echo "target/*" >> .gitignore
+echo "*-combined.cpp" >> .gitignore
+echo "stats" >> .gitignore
+echo "base.cpp" >> .gitignore
 echo "-I." >> compile_flags.txt
 echo "-std=c++20" >> compile_flags.txt
 echo "-Og" >> compile_flags.txt 

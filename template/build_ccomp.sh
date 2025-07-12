@@ -2,6 +2,7 @@ question="a"
 combine=false
 #debug="debug"
 
+mkdir -p target
 if [ $combine = true ]; then
 	question_combined=""$question"-combined"
 	python3 expander.py ""$question".cpp"
@@ -10,9 +11,9 @@ if [ $combine = true ]; then
 
 	echo " " > stats
 	if [ $debug ]; then
-		/usr/bin/time -o stats -v ./"$question_combined-debug" < input.txt  > output.txt
+		/usr/bin/time -o stats -v ./target/"$question_combined-debug" < input.txt  > output.txt
 	else
-		/usr/bin/time -o stats -v ./"$question_combined" < input.txt  > output.txt
+		/usr/bin/time -o stats -v ./target/"$question_combined" < input.txt  > output.txt
 	fi
 	cat output.txt
 	rm output.txt
@@ -22,10 +23,10 @@ else
 	echo " " > stats
 	
 	if [ $debug ]; then
-		/usr/bin/time -o stats -v ./"$question-debug" <input.txt > output.txt
+		/usr/bin/time -o stats -v ./target/"$question-debug" <input.txt > output.txt
 
 	else
-		/usr/bin/time -o stats -v ./"$question" <input.txt > output.txt
+		/usr/bin/time -o stats -v ./target/"$question" <input.txt > output.txt
 	fi
 
 	cat output.txt
