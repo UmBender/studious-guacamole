@@ -24,7 +24,7 @@ echo "*-combined.cpp" >> .gitignore
 echo "stats" >> .gitignore
 echo "base.cpp" >> .gitignore
 echo "-I." >> compile_flags.txt
-echo "-std=c++20" >> compile_flags.txt
+echo "-std=c++23" >> compile_flags.txt
 echo "-Og" >> compile_flags.txt 
 echo "-g" >> compile_flags.txt 
 echo "-pedantic" >> compile_flags.txt
