@@ -16,9 +16,11 @@ template <typename T, typename... TRest> void __dbg(T first, TRest... rest) {
   } while (0)
 #define MAX_INT ((int64_t)1E18 + 1000)
 #define makefn(fn) [](auto... args) { return fn(args...); }
+#define makeconst(value) []( return (value);)
 using ll = long long;
 using ld = long double;
 #define int ll
+using i64 = long long; using u64 = unsigned long long; using f32 = float; using f64 = double; using f128  = long double;
 //using mint = atcoder::modint;
 // clang-format on
 
