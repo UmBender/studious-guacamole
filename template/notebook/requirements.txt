@@ -23,3 +23,5 @@ nltk
 spacy
 pytest
 Cython
+arviz
+pymc
